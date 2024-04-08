@@ -15,6 +15,8 @@ const backsound = ref(null);
 
 const isPopupShown = ref(true);
 const hidePopup = () => {
+  document.body.classList.remove('overflow-hidden');
+
   if (backsound.value) {
     backsound.value.play();
   }
